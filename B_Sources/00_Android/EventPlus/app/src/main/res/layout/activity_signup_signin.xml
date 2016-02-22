@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.poly.eventplus.activity.SignupAndSigninActivity">
+
+    <FrameLayout
+        android:id="@+id/layoutSignin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/lbl_logo"
+                android:src="@mipmap/ic_launcher" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lbl_email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lbl_password"
+                    android:inputType="textPassword"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/btnSignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_custom"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/lbl_signin"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnGoSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="@string/lbl_go_signup"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutSignup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgSplashScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/lbl_logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        android:visibility="gone" />
+
+</FrameLayout>

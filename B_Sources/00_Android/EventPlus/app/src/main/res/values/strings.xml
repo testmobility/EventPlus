@@ -3,4 +3,16 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="lbl_alert_not_connect">No network connection, please check your net work.</string>
+    <string name="lbl_empty_email">Please input email</string>
+    <string name="lbl_empty_password">Please input password</string>
+    <string name="lbl_error_email_format">Wrong email format</string>
+    <string name="lbl_password_too_short">Password too short</string>
+    <string name="lbl_go_signup">Bạn chưa có tài khoản?</string>
+    <string name="lbl_signin">Đăng nhập</string>
+    <string name="lbl_logo">Logo</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="title_activity_signup_and_signin">SignupAndSigninActivity</string>
 </resources>
